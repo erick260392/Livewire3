@@ -10,6 +10,7 @@ class Paises extends Component
     public $pais;
     public $active;
     public $count =0;
+    public $open = true;
 
 
     public function save()
@@ -32,7 +33,9 @@ class Paises extends Component
     public function increment(){
         $this->count++;
     }
-    
+
+
+
     public function render()
     {
         return view('livewire.paises');
