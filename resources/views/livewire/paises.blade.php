@@ -1,5 +1,6 @@
 <div>
     <x-button class="mb-2" wire:click="$set('count',0)">Resetear</x-button>
+    <br>
     <x-button class="mb-2" wire:click="$toggle('open')">Mostrar/Ocultar </x-button>
     @if ($open)
     <form class="mb-4" wire:submit="save">
